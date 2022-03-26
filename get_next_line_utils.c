@@ -6,7 +6,7 @@
 /*   By: tsong <tsong@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 17:02:47 by tsong             #+#    #+#             */
-/*   Updated: 2022/03/26 18:55:27 by tsong            ###   ########seoul.kr  */
+/*   Updated: 2022/03/26 19:00:48 by tsong            ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ char	*ft_strdup(const char *str)
 	return (new_str);
 }
 
-//이거 다시 보기
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*str;
@@ -65,7 +64,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		str[j] = s[start + j];
 		j++;
 	}
-	str[j] = '\0';
+	str[j] = 0;
 	return (str);
 }
 
